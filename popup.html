@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Schema Generator</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+
+<body>
+    <h1>Generate Schema of All H3 Tags</h1>
+
+    <p>Skip H3 Tags <span><input type="number" min="0" max="15" id="skipTagsTop" value="0"> from top.</p></span>
+    <p>Skip H3 Tags <span><input type="number" min="0" max="15" id="skipTagsBottom" value="0"> from bottom</p></span>
+    <textarea name="schemaFields" id="schemaFields" cols="30" rows="10"></textarea>
+
+    <input type="button" id="generateBtn" value="Generate Schema">
+</body>
+
+</html>

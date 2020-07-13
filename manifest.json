@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Schema Generator",
+    "version": "1.0",
+    "description": "Automagically generate Schemas for your Website!",
+
+    "page_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html",
+        "default_title": "Schema Generator"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persisten": false
+    },
+
+
+    "content_scripts": [{
+        "matches": ["https://*/*"],
+        "js": ["jquery-3.5.1.min.js", "content.js"]
+    }],
+
+    "permissions": [
+        "tabs",
+        "https://*/*",
+        "alarms"
+    ]
+
+
+
+}
